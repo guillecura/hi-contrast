@@ -1,0 +1,18 @@
+{{! This is the post loop - each post will be output using this markup }}
+<section class="home-posts">
+  {{#foreach posts}}
+    {{#has tag="thoughts"}}
+      {{#if featured}}
+        <article class="{{post_class}} thought">
+          <header class="post-header">
+            <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+          </header>
+
+          <section class="post-excerpt">
+            <p>{{excerpt words="1000"}}</p>
+          </section>
+        </article>
+      {{/if}}
+    {{/has}}
+  {{/foreach}}
+</section>

@@ -1,0 +1,50 @@
+// =============================================================================
+// HOME PAGE CASE-STUDY BLOCK
+// =============================================================================
+
+
+// Case Study box
+// -----------------------------------------------------------------------------
+.case-study {
+  @include inline-block;
+  animation: blured-out .999s ease-out forwards; // Blur out animation
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $case-size;
+  max-height: #{(($site-box - ($distance * 3)) / 3) - $distance};
+  max-width: #{(($site-box - ($distance * 3)) / 3) - $distance};
+  padding: $distance * 2;
+  position: relative;
+  width: $case-size;
+
+  @include mq(mobile) {
+    @include block;
+    height: $m-case-size;
+    width: $m-case-size;
+  };
+
+  &:nth-child(2n),
+  &:nth-child(3n) {
+    margin-left: $distance * 1.5;
+
+    @include mq(mobile) {
+      margin-left: auto;
+      margin-top: $distance * 1.5;
+    }
+  }
+
+  > * {
+    background-color: $white;
+    bottom: $distance;
+    display: block;
+    left: $distance;
+    padding: 0 $distance * 1.5;
+    position: absolute;
+  }
+
+  span {
+    font-size: $ftiny;
+  }
+}
+// -----------------------------------------------------------------------------

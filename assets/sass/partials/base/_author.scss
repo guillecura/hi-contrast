@@ -1,0 +1,44 @@
+// =============================================================================
+// POST AUTHOR STYLES
+// =============================================================================
+
+
+// Author Image
+// -----------------------------------------------------------------------------
+%auth-image {
+  border-radius: 50%;
+  height: $auth-image;
+  overflow: hidden;
+  width: $auth-image;
+
+  > .img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    font-size: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  + .author-name {
+    margin-left: $distance;
+  }
+}
+// -----------------------------------------------------------------------------
+
+
+// Author Name
+// -----------------------------------------------------------------------------
+%auth-name {
+  font-size: $fh6;
+  font-weight: $medium;
+  line-height: $auth-image / 2;
+
+  > span {
+    display: block;
+    font-size: $ftiny;
+    font-weight: $light;
+  }
+}
+// -----------------------------------------------------------------------------
