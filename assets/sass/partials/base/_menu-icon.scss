@@ -28,6 +28,7 @@
   position: fixed;
   right: calc(50% - #{($site-box / 2) - ($distance * 3)});
   top: ($header-height - $icon) / 2;
+  transform: translateZ(1px);
   width: #{$icon + $distance / 2};
   z-index: $z-top + 2; // over the nav menu
 

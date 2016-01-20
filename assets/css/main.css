@@ -234,6 +234,7 @@ body {
   position: fixed;
   right: calc(50% - 610px);
   top: 24px;
+  transform: translateZ(1px);
   width: 37px;
   z-index: 10002; }
   @media (max-width: 1280px) {
