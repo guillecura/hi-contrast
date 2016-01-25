@@ -519,16 +519,26 @@ h5 {
 h6 {
   font-size: 0.85rem; }
 
+hr {
+  border: 0;
+  border-top: 1px solid #efefe9;
+  margin: 20px 0; }
+
 pre,
 code {
   background-color: #fafaf8;
-  border: 3px solid #99a6b0;
+  border: 1px solid #dadacb;
   border-radius: 3px;
+  color: #7c8d9a;
   font-size: 0.7rem;
   line-height: 1.48em; }
 
 pre {
+  margin: 10px auto;
   padding: 5px 10px; }
+  pre code {
+    border: 0;
+    padding: 0; }
 
 code {
   padding: 0 5px; }
