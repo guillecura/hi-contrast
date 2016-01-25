@@ -56,11 +56,15 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-feature-settings: 'kern';
   font-kerning: normal;
+  font-smooth: always;
+  font-smoothing: antialiased;
   font-variant-ligatures: common-ligatures;
   font-weight: 400;
   text-rendering: optimizeLegibility; }
   body.nav-opened {
-    overflow: hidden; }
+    height: 100vh;
+    overflow: hidden;
+    position: relative; }
 
 .site-wrapper {
   margin-top: 80px;
@@ -100,13 +104,9 @@ body {
   margin-right: -5px;
   vertical-align: top;
   animation: blured-out .999s ease-out forwards;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: calc((100vw - 30px) / 3 - 10px);
   max-height: 406.66667px;
   max-width: 406.66667px;
-  padding: 20px;
   position: relative;
   width: calc((100vw - 30px) / 3 - 10px); }
   @media (max-width: 640px) {
@@ -121,13 +121,22 @@ body {
       .case-study:nth-child(2n), .case-study:nth-child(3n) {
         margin-left: auto;
         margin-top: 15px; } }
-  .case-study > * {
+  .case-study > a {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 0; }
+  .case-study > section {
     background-color: white;
     bottom: 10px;
     display: block;
     left: 10px;
     padding: 0 15px;
-    position: absolute; }
+    position: absolute;
+    z-index: 1; }
   .case-study span {
     font-size: 0.7rem; }
 
@@ -509,6 +518,20 @@ h5 {
 
 h6 {
   font-size: 0.85rem; }
+
+pre,
+code {
+  background-color: #fafaf8;
+  border: 3px solid #99a6b0;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  line-height: 1.48em; }
+
+pre {
+  padding: 5px 10px; }
+
+code {
+  padding: 0 5px; }
 
 .work-sample {
   display: inline-block;

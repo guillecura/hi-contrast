@@ -33,12 +33,16 @@ body {
   font-family: $primary-font;
   font-feature-settings: 'kern';
   font-kerning: normal;
+  font-smooth: always; // scss-lint:disable PropertySpelling
+  font-smoothing: antialiased;
   font-variant-ligatures: common-ligatures;
   font-weight: $regular;
   text-rendering: optimizeLegibility;
 
   &.nav-opened {
+    height: 100vh;
     overflow: hidden;
+    position: relative;
   }
 }
 // -----------------------------------------------------------------------------
