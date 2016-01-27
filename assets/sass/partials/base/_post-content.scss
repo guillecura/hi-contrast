@@ -10,10 +10,32 @@
 // -----------------------------------------------------------------------------
   p {
     font-size: $fsmall;
-  }
 
-  a {
-    color: $primary;
+    + p {
+      margin-top: $distance * 2;
+    }
+
+    a {
+      color: $primary;
+
+      // scss-lint:disable NestingDepth
+      &:hover {
+        color: $primary-light;
+      }
+    }
+  }
+// -----------------------------------------------------------------------------
+
+
+// Quotes
+// -----------------------------------------------------------------------------
+  blockquote {
+    border-left: $border * 2 solid $smoke-dark;
+    font-size: $fh4;
+    font-weight: $light;
+    line-height: $line-height;
+    margin: $distance * 2 auto;
+    padding: 0 $distance * 2;
   }
 // -----------------------------------------------------------------------------
 
@@ -31,7 +53,7 @@
   }
 
   pre {
-    margin: $distance auto;
+    margin: $distance * 2 auto;
     overflow-x: scroll;
     padding: $distance / 2 $distance;
 
