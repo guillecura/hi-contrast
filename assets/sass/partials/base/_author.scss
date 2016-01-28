@@ -3,13 +3,14 @@
 // =============================================================================
 
 
-// Author Image
+// Image mixin
 // -----------------------------------------------------------------------------
-%auth-image {
+@mixin author-image($size) {
   border-radius: 50%;
-  height: $auth-image;
+  font-size: 0;
+  height: $size;
   overflow: hidden;
-  width: $auth-image;
+  width: $size;
 
   > .img {
     background-position: center;
@@ -20,6 +21,14 @@
     height: 100%;
     width: 100%;
   }
+}
+// -----------------------------------------------------------------------------
+
+
+// Author Image
+// -----------------------------------------------------------------------------
+%auth-image {
+  @include author-image($auth-image);
 
   + .author-name {
     margin-left: $distance;
@@ -40,5 +49,13 @@
     font-size: $ftiny;
     font-weight: $light;
   }
+}
+// -----------------------------------------------------------------------------
+
+
+// Author Profile Picture
+// -----------------------------------------------------------------------------
+%auth-picture {
+  @include author-image($auth-profile);
 }
 // -----------------------------------------------------------------------------

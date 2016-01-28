@@ -18,7 +18,7 @@
 {{! The main content area on the homepage }}
 <main id="content" class="home-content" role="main">
 
-  {{#get "posts" limit="6" include="tags" featured="true" as |featured|}}
+  {{#get "posts" filter="featured:true" order="featured desc" include="tags" as |featured|}}
     {{! The tag below includes the post loop - partials/home-project.hbs }}
     <section class="home-cases">
       {{#foreach featured}}

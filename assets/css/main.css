@@ -76,6 +76,7 @@ body {
 
 .post-template:not(.page-template) .author .author-image {
   border-radius: 50%;
+  font-size: 0;
   height: 46px;
   overflow: hidden;
   width: 46px; }
@@ -98,6 +99,21 @@ body {
     display: block;
     font-size: 0.7rem;
     font-weight: 300; }
+
+.author-profile .author-image {
+  border-radius: 50%;
+  font-size: 0;
+  height: 150px;
+  overflow: hidden;
+  width: 150px; }
+  .author-profile .author-image > .img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    font-size: 0;
+    height: 100%;
+    width: 100%; }
 
 .case-study {
   display: inline-block;
@@ -142,6 +158,7 @@ body {
 
 .button {
   border: 3px solid black;
+  color: black;
   display: inline-block;
   font-weight: 500;
   height: 60px;
@@ -690,6 +707,12 @@ h6 {
       .work-sample .post-title {
         font-size: 0.7rem; } }
 
+.author-profile {
+  padding: 30px 0; }
+  .author-profile .author-bio {
+    padding: 30px;
+    text-align: center; }
+
 .contact-content {
   animation: op-in .999s ease-out forwards;
   min-height: calc(80vh - 135px);
@@ -706,6 +729,7 @@ h6 {
       .contact-content > article {
         padding: 10px 0; } }
     .contact-content > article .button {
+      color: black;
       margin: 20px auto; }
     .contact-content > article span {
       font-size: 0.85rem; }
