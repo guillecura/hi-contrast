@@ -40,31 +40,16 @@
 // -----------------------------------------------------------------------------
 
 
-// Code & monospace type
+// Inline code
 // -----------------------------------------------------------------------------
-  pre,
-  code {
+  code:not([class*='language-']) {
     background-color: $smoke;
     border: 1px solid darken($smoke-dark, 10%);
     border-radius: $border;
-    color: $gray-dark;
+    color: $stone-light;
     font-size: $ftiny;
     line-height: $line-height-big;
-  }
-
-  pre {
-    margin: $distance * 2 auto;
-    overflow-x: scroll;
-    padding: $distance / 2 $distance;
-
-    code {
-      border: 0;
-      padding: 0;
-    }
-  }
-
-  code {
-    padding: 0 $distance / 2;
+    padding: $distance / 3 $distance / 2;
   }
 // -----------------------------------------------------------------------------
 
