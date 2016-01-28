@@ -18,10 +18,22 @@
 {{! The main content area on the homepage }}
 <main id="content" class="home-content" role="main">
 
-  {{! The tag below includes the post loop - partials/home-project.hbs }}
-  {{> "home-project"}}
+  {{#get "posts" limit="6" include="tags" featured="true" as |featured|}}
+    {{! The tag below includes the post loop - partials/home-project.hbs }}
+    <section class="home-cases">
+      {{#foreach featured}}
+        {{#has tag="portfolio"}}{{> "home-project"}}{{/has}}
+      {{/foreach}}
+    </section>
 
-  {{! The tag below includes the post loop - partials/home-thought.hbs }}
-  {{> "home-thought"}}
+    {{! The tag below includes the post loop - partials/home-thought.hbs }}
+    <section class="home-posts">
+      {{#foreach featured}}
+        {{#has tag="thoughts"}}{{> "home-thought"}}{{/has}}
+      {{/foreach}}
+    </section>
+  {{else}}
+    <p>No featured posts yet!</p>
+  {{/get}}
 
 </main>
