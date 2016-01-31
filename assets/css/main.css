@@ -589,40 +589,40 @@ a[class='instagram'] {
 a[class='github'] {
   background-image: url("../img/icon-github.svg"); }
 
-.post-template:not(.page-template) article, article.thought {
+.about-content > .post, .post-template:not(.page-template) article, article.thought {
   max-width: 640px;
   padding: 30px 0;
   width: 100%; }
-  .post-template:not(.page-template) article + .thought::before, article.thought + .thought::before {
+  .about-content > .post + .thought::before, .post-template:not(.page-template) article + .thought::before, article.thought + .thought::before {
     border-top: 3px solid black;
     content: '';
     display: block;
     margin: 10px auto 40px;
     width: 10%; }
-  .post-template:not(.page-template) article:last-of-type, article.thought:last-of-type {
+  .about-content > .post:last-of-type, .post-template:not(.page-template) article:last-of-type, article.thought:last-of-type {
     margin-bottom: 50px; }
-  .post-template:not(.page-template) article .post-header, article.thought .post-header {
+  .about-content > .post .post-header, .post-template:not(.page-template) article .post-header, article.thought .post-header {
     margin-bottom: 20px;
     text-align: center; }
-  .post-template:not(.page-template) article .post-title, article.thought .post-title {
+  .about-content > .post .post-title, .post-template:not(.page-template) article .post-title, article.thought .post-title {
     line-height: 1.11em; }
-  .post-template:not(.page-template) article .post-date, article.thought .post-date {
+  .about-content > .post .post-date, .post-template:not(.page-template) article .post-date, article.thought .post-date {
     font-size: 0.7rem;
     font-weight: 300;
     line-height: 1.11em; }
-  .post-template:not(.page-template) article .post-excerpt p, article.thought .post-excerpt p {
+  .about-content > .post .post-excerpt p, .post-template:not(.page-template) article .post-excerpt p, article.thought .post-excerpt p {
     font-size: 0.85rem; }
-  .post-template:not(.page-template) article .post-excerpt span, article.thought .post-excerpt span {
+  .about-content > .post .post-excerpt span, .post-template:not(.page-template) article .post-excerpt span, article.thought .post-excerpt span {
     float: left;
     font-size: 0.7rem;
     margin: 10px 0; }
-  .post-template:not(.page-template) article .post-excerpt [class*='tag-'], article.thought .post-excerpt [class*='tag-'] {
+  .about-content > .post .post-excerpt [class*='tag-'], .post-template:not(.page-template) article .post-excerpt [class*='tag-'], article.thought .post-excerpt [class*='tag-'] {
     font-weight: 300; }
-    .post-template:not(.page-template) article .post-excerpt [class*='tag-']::after, article.thought .post-excerpt [class*='tag-']::after {
+    .about-content > .post .post-excerpt [class*='tag-']::after, .post-template:not(.page-template) article .post-excerpt [class*='tag-']::after, article.thought .post-excerpt [class*='tag-']::after {
       content: ', '; }
-    .post-template:not(.page-template) article .post-excerpt [class*='tag-']:last-of-type::after, article.thought .post-excerpt [class*='tag-']:last-of-type::after {
+    .about-content > .post .post-excerpt [class*='tag-']:last-of-type::after, .post-template:not(.page-template) article .post-excerpt [class*='tag-']:last-of-type::after, article.thought .post-excerpt [class*='tag-']:last-of-type::after {
       display: none; }
-  .post-template:not(.page-template) article .post-excerpt .read-more, article.thought .post-excerpt .read-more {
+  .about-content > .post .post-excerpt .read-more, .post-template:not(.page-template) article .post-excerpt .read-more, article.thought .post-excerpt .read-more {
     float: right;
     font-size: 0.7rem;
     margin: 10px 0; }
@@ -709,6 +709,8 @@ h6 {
 
 .about-content {
   text-align: center; }
+  .about-content > .post {
+    text-align: left; }
 
 .author-profile {
   padding: 30px 0; }

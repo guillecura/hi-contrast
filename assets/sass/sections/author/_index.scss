@@ -7,6 +7,11 @@
 // -----------------------------------------------------------------------------
 .about-content {
   text-align: center;
+
+  > .post {
+    @extend %thought;
+    text-align: left;
+  }
 }
 
 .author-profile {
