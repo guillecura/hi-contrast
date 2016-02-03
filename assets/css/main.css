@@ -664,6 +664,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   height: calc((100vw - 30px) / 3 - 10px);
+  margin-left: 15px;
   max-height: 406.66667px;
   max-width: 406.66667px;
   padding: 20px;
@@ -673,10 +674,10 @@ h6 {
     .work-sample {
       height: calc((100vw - 30px) / 2 - 10px);
       width: calc((100vw - 30px) / 2 - 10px); } }
-  .work-sample:nth-child(2n), .work-sample:nth-child(3n) {
-    margin-left: 15px; }
+  .work-sample:nth-child(3n-2) {
+    margin-left: 0; }
     @media (max-width: 640px) {
-      .work-sample:nth-child(2n), .work-sample:nth-child(3n) {
+      .work-sample:nth-child(3n-2) {
         margin-left: auto; } }
   @media (max-width: 640px) {
     .work-sample:nth-child(2n) {
