@@ -121,6 +121,7 @@ body {
   vertical-align: top;
   animation: blured-out .999s ease-out forwards;
   height: calc((100vw - 30px) / 3 - 10px);
+  margin-left: 15px;
   max-height: 406.66667px;
   max-width: 406.66667px;
   position: relative;
@@ -131,10 +132,10 @@ body {
       margin-right: auto;
       height: calc(100vw - 30px);
       width: calc(100vw - 30px); } }
-  .case-study:nth-child(2n), .case-study:nth-child(3n) {
-    margin-left: 15px; }
+  .case-study:nth-child(3n-2) {
+    margin-left: 0; }
     @media (max-width: 640px) {
-      .case-study:nth-child(2n), .case-study:nth-child(3n) {
+      .case-study:nth-child(3n-2) {
         margin-left: auto;
         margin-top: 15px; } }
   .case-study > a {

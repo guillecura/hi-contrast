@@ -9,6 +9,7 @@
   @include inline-block;
   animation: blured-out .999s ease-out forwards; // Blur out animation
   height: $case-size;
+  margin-left: $distance * 1.5;
   max-height: #{(($site-box - ($distance * 3)) / 3) - $distance};
   max-width: #{(($site-box - ($distance * 3)) / 3) - $distance};
   position: relative;
@@ -20,9 +21,8 @@
     width: $m-case-size;
   };
 
-  &:nth-child(2n),
-  &:nth-child(3n) {
-    margin-left: $distance * 1.5;
+  &:nth-child(3n-2) {
+    margin-left: 0;
 
     @include mq(mobile) {
       margin-left: auto;
