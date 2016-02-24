@@ -131,6 +131,8 @@ body {
       display: block;
       margin-right: auto;
       height: calc(100vw - 30px);
+      margin-bottom: 10px;
+      margin-left: auto;
       width: calc(100vw - 30px); } }
   .case-study:nth-child(3n-2) {
     margin-left: 0; }

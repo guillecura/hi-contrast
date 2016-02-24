@@ -18,6 +18,8 @@
   @include mq(mobile) {
     @include block;
     height: $m-case-size;
+    margin-bottom: $distance;
+    margin-left: auto;
     width: $m-case-size;
   };
 
