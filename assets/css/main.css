@@ -188,12 +188,14 @@ body {
 .hero-section {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: calc(100vh - 95px);
   min-height: 450px;
   position: relative; }
   .hero-section.no-cover {
     background-color: white; }
+  .hero-section.hero-section:not(.no-cover) {
+    animation: item-in .666s ease-out forwards; }
 
 .main-header-content {
   position: absolute;
@@ -675,6 +677,7 @@ h6 {
   @media (max-width: 640px) {
     .work-sample {
       height: calc((100vw - 30px) / 2 - 10px);
+      margin-left: auto;
       width: calc((100vw - 30px) / 2 - 10px); } }
   .work-sample:nth-child(3n-2) {
     margin-left: 0; }

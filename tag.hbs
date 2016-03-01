@@ -6,7 +6,7 @@
 </nav>
 
 {{! If we have a tag cover, display that - else blog cover - else nothing }}
-<header class="tag-head {{#if tag.image}}" style="background-image: url({{tag.image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+<header class="tag-head {{#if tag.image}}" style="background-image: url({{tag.image}}){{else}}no-cover{{/if}}">
   {{#if tag.description}}
     <h3 class="page-description">{{tag.description}}</h3>
   {{/if}}

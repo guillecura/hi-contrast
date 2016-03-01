@@ -20,6 +20,7 @@
 
   @include mq(mobile) {
     height: $case-size-small;
+    margin-left: auto;
     width: $case-size-small;
   }
 

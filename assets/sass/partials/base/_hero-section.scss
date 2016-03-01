@@ -8,12 +8,16 @@
 .hero-section {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: $section-height;
   min-height: $hero-min-height;
   position: relative;
 
   &.no-cover {background-color: $white;}
+
+  &.hero-section:not(.no-cover) {
+    animation: item-in .666s ease-out forwards; // Slide In animation
+  }
 }
 // -----------------------------------------------------------------------------
 
