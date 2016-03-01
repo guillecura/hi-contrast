@@ -4,7 +4,7 @@
 {{! The big featured header }}
 {{#if @blog.cover}}
   <header class="hero-section" style="background-image: url({{@blog.cover}})"></header>
-{{#else}}
+{{else}}
   <header class="hero-section no-cover">
     <div class="main-header-content">
       {{#if @blog.logo}}
