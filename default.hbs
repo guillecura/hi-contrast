@@ -6,7 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   {{! Page Meta }}
-  <title>{{meta_title}}</title>
+  {{#if tag}}
+    {{#tag}}<title>{{name}} - {{@blog.title}}</title>{{/tag}}
+  {{else}}
+    {{#if post}}
+      {{#post}}<title>{{title}} - {{@blog.title}}</title>{{/post}}
+    {{else}}
+      <title>{{@blog.title}}</title>
+    {{/if}}
+  {{/if}}
+
   <meta name="description" content="{{meta_description}}" />
 
   <meta name="HandheldFriendly" content="True" />

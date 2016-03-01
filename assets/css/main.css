@@ -122,6 +122,7 @@ body {
   animation: blured-out .999s ease-out forwards;
   height: calc((100vw - 30px) / 3 - 10px);
   margin-left: 15px;
+  margin-top: 15px;
   max-height: 406.66667px;
   max-width: 406.66667px;
   position: relative;
@@ -133,6 +134,7 @@ body {
       height: calc(100vw - 30px);
       margin-bottom: 10px;
       margin-left: auto;
+      margin-top: auto;
       width: calc(100vw - 30px); } }
   .case-study:nth-child(3n-2) {
     margin-left: 0; }
@@ -535,6 +537,25 @@ pre[class*='language-'] {
 
 ::selection {
   background: #efefe9; }
+
+.related-posts {
+  display: inline-block;
+  margin-right: -5px;
+  vertical-align: top;
+  margin-top: 30px;
+  width: 50%; }
+  .related-posts > span {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 23px; }
+  .related-posts > a {
+    font-size: 0.7rem;
+    line-height: 23px; }
+    .related-posts > a::after {
+      content: ', '; }
+    .related-posts > a:last-of-type::after {
+      content: ''; }
 
 .post-template:not(.page-template) .share > a[class*='icon-'] {
   display: inline-block;

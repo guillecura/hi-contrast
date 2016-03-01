@@ -10,6 +10,7 @@
   animation: blured-out .999s ease-out forwards; // Blur out animation
   height: $case-size;
   margin-left: $distance * 1.5;
+  margin-top: $distance * 1.5;
   max-height: #{(($site-box - ($distance * 3)) / 3) - $distance};
   max-width: #{(($site-box - ($distance * 3)) / 3) - $distance};
   position: relative;
@@ -20,6 +21,7 @@
     height: $m-case-size;
     margin-bottom: $distance;
     margin-left: auto;
+    margin-top: auto;
     width: $m-case-size;
   };
 
