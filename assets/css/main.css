@@ -6,6 +6,7 @@
   to {
     opacity: 1;
     transform: translateY(0); } }
+
 @keyframes menu-in {
   from {
     opacity: 0;
@@ -13,6 +14,7 @@
   to {
     opacity: 1;
     transform: scale(1) translateZ(0); } }
+
 @keyframes menu-out {
   from {
     opacity: 1;
@@ -20,26 +22,31 @@
   to {
     opacity: 0;
     transform: scale(1.1) translateZ(10px); } }
+
 @keyframes op-in {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+
 @keyframes header-in {
   from {
     top: -80px; }
   to {
     top: 0; } }
+
 @keyframes menu-h-in {
   from {
     top: -80px; }
   to {
     top: 24px; } }
+
 @keyframes blured-out {
   from {
     -webkit-filter: blur(5px); }
   to {
     -webkit-filter: blur(0); } }
+
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -177,7 +184,7 @@ body {
   background-color: black;
   height: 40px;
   position: relative;
-  width: 100vw; }
+  width: 100%; }
   .site-footer .copyright {
     bottom: 0;
     color: #404040;
@@ -296,6 +303,7 @@ body {
     .icon-menu rect:nth-child(3) {
       transform: translateY(22.5px);
       transition-delay: 150ms; }
+
 @keyframes bounce-1 {
   0% {
     width: 32px; }
@@ -309,6 +317,7 @@ body {
     animation: bounce-1 150ms ease-out forwards;
     fill: #179bcf;
     width: 48.04805px; }
+
 @keyframes bounce-2 {
   0% {
     width: 32px; }
@@ -322,6 +331,7 @@ body {
     animation: bounce-2 300ms ease-out forwards;
     fill: #31b4e8;
     width: 24.02402px; }
+
 @keyframes bounce-3 {
   0% {
     width: 32px; }
@@ -335,10 +345,16 @@ body {
     animation: bounce-3 450ms ease-out forwards;
     fill: #5fc5ed;
     width: 16.01602px; }
+  @media (max-width: 640px) {
+    .icon-menu:hover rect {
+      animation: none;
+      fill: black;
+      width: 32px; } }
   .icon-menu.nav-close {
     background-color: transparent; }
     .icon-menu.nav-close rect {
       fill: white; }
+
 @keyframes cross-l {
   0% {
     transform: translateY(14.5px); }
@@ -346,6 +362,7 @@ body {
     transform: translateY(14.5px) rotate(-45deg); }
   100% {
     transform: translateY(14.5px) rotate(-45deg); } }
+
 @keyframes cross-r {
   0% {
     transform: translateY(14.5px); }
@@ -373,7 +390,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 10001; }
   .nav.closed {
     animation: menu-out .333s ease-in forwards; }
@@ -407,7 +424,7 @@ body {
   position: fixed;
   top: 0;
   transform: translateX(-50%);
-  width: 100vw;
+  width: 100%;
   z-index: 10000; }
   @media (max-width: 640px) {
     .main-nav {
@@ -427,6 +444,14 @@ body {
     color: #31b4e8; }
     .post-content p a:hover {
       color: #5fc5ed; }
+
+.post-content ol,
+.post-content ul {
+  padding-left: 20px; }
+  .post-content ol li,
+  .post-content ul li {
+    font-size: 0.85rem; }
+
 .post-content blockquote {
   border-left: 6px solid #efefe9;
   font-size: 1.25rem;
@@ -434,6 +459,7 @@ body {
   line-height: 1.11em;
   margin: 20px auto;
   padding: 0 20px; }
+
 .post-content code:not([class*='language-']) {
   background-color: #fafaf8;
   border: 1px solid #dadacb;
@@ -442,8 +468,10 @@ body {
   font-size: 0.7rem;
   line-height: 1.48em;
   padding: 3.33333px 5px; }
+
 .post-content img {
   max-width: 100%; }
+
 .post-content hr {
   border: 0;
   border-top: 1px solid #efefe9;
@@ -786,6 +814,7 @@ h6 {
 
 .post-template:not(.page-template) .main-nav {
   display: none; }
+
 .post-template:not(.page-template) .main-header {
   animation: blured-out .999s ease-out forwards;
   background-position: center;
@@ -793,20 +822,25 @@ h6 {
   background-size: cover;
   height: 50vh;
   min-height: 450px; }
+
 .post-template:not(.page-template) .site-wrapper {
   margin: 0;
   max-width: 100vw;
   min-height: calc(100vh - 40px);
   padding: 0; }
+
 .post-template:not(.page-template) .content {
   animation: op-in .999s ease-out forwards;
   max-width: 1280px;
   padding: 15px;
   padding-bottom: 50px; }
+
 .post-template:not(.page-template) article .post-header {
   text-align: left; }
+
 .post-template:not(.page-template) .post-content + .post-footer {
   margin-top: 30px; }
+
 .post-template:not(.page-template) .author,
 .post-template:not(.page-template) .share {
   display: inline-block;
@@ -814,14 +848,17 @@ h6 {
   vertical-align: top;
   margin-top: 30px;
   width: 50%; }
+
 .post-template:not(.page-template) .author .author-image {
   display: inline-block;
   margin-right: -5px;
   vertical-align: top; }
+
 .post-template:not(.page-template) .author .author-name {
   display: inline-block;
   margin-right: -5px;
   vertical-align: top; }
+
 .post-template:not(.page-template) .share {
   text-align: right; }
   .post-template:not(.page-template) .share > span {
@@ -842,5 +879,3 @@ h6 {
 .tag-content {
   animation: op-in .999s ease-out forwards;
   min-height: 0; }
-
-/*# sourceMappingURL=main.css.map */

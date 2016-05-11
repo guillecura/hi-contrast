@@ -31,14 +31,14 @@ $post-height:                calc(100vh - #{$footer-height});
 // Navigation Menu
 // -----------------------------------------------------------------------------
 $menu-height:                100vh;
-$menu-width:                 100vw;
+$menu-width:                 100%; // removed viewport units to enable scrollbar
 // -----------------------------------------------------------------------------
 
 
 // Hero Section
 // -----------------------------------------------------------------------------
 $hero-min-height:            450px;
-$hero-width:                 100vw;
+$hero-width:                 100%; // removed viewport units to enable scrollbar
 $hero-logo:                  200px;
 // -----------------------------------------------------------------------------
 

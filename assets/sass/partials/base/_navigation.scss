@@ -15,7 +15,7 @@
   position: fixed;
   top: 0;
   transform: translateX(-50%);
-  width: 100vw;
+  width: 100%;
   z-index: $z-top;
 
   @include mq(mobile) {
