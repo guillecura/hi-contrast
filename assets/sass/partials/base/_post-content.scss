@@ -36,6 +36,34 @@
 // -----------------------------------------------------------------------------
 
 
+// Multilingual or Side notes
+// -----------------------------------------------------------------------------
+  .sidenote {
+    display: table;
+
+    > * {
+      display: table-cell;
+      padding-right: $distance;
+      vertical-align: top;
+      width: 65%;
+
+      &:last-child {
+        border-left: $border * 1.5 solid $smoke-dark;
+        font-size: $ftiny;
+        font-weight: $light;
+        padding-left: $distance;
+        padding-right: 0;
+        width: 35%;
+      }
+    }
+
+    > p + p {
+      margin-top: 0;
+    }
+  }
+// -----------------------------------------------------------------------------
+
+
 // Quotes
 // -----------------------------------------------------------------------------
   blockquote {

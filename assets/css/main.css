@@ -452,6 +452,23 @@ body {
   .post-content ul li {
     font-size: 0.85rem; }
 
+.post-content .sidenote {
+  display: table; }
+  .post-content .sidenote > * {
+    display: table-cell;
+    padding-right: 10px;
+    vertical-align: top;
+    width: 65%; }
+    .post-content .sidenote > *:last-child {
+      border-left: 4.5px solid #efefe9;
+      font-size: 0.7rem;
+      font-weight: 300;
+      padding-left: 10px;
+      padding-right: 0;
+      width: 35%; }
+  .post-content .sidenote > p + p {
+    margin-top: 0; }
+
 .post-content blockquote {
   border-left: 6px solid #efefe9;
   font-size: 1.25rem;
