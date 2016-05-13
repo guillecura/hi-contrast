@@ -26,6 +26,7 @@
 
   a {
     display: block;
+    font-size: 0;
     height: 100%;
     transform-origin: center;
     transition: transform .1s ease-out;
@@ -37,7 +38,7 @@
   }
 }
 
-$list: twitter linkedin instagram github;
+$list: facebook github googleplus instagram linkedin share twitter dribbble;
 
 @each $link in $list {
   a[class='#{$link}'] {

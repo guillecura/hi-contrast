@@ -652,6 +652,7 @@ pre[class*='language-'] {
       margin-left: 10px; }
   .social-links a {
     display: block;
+    font-size: 0;
     height: 100%;
     transform-origin: center;
     transition: transform .1s ease-out;
@@ -659,17 +660,29 @@ pre[class*='language-'] {
     .social-links a:hover {
       transform: scale(0.9); }
 
-a[class='twitter'] {
-  background-image: url("../img/icon-twitter.svg"); }
+a[class='facebook'] {
+  background-image: url("../img/icon-facebook.svg"); }
 
-a[class='linkedin'] {
-  background-image: url("../img/icon-linkedin.svg"); }
+a[class='github'] {
+  background-image: url("../img/icon-github.svg"); }
+
+a[class='googleplus'] {
+  background-image: url("../img/icon-googleplus.svg"); }
 
 a[class='instagram'] {
   background-image: url("../img/icon-instagram.svg"); }
 
-a[class='github'] {
-  background-image: url("../img/icon-github.svg"); }
+a[class='linkedin'] {
+  background-image: url("../img/icon-linkedin.svg"); }
+
+a[class='share'] {
+  background-image: url("../img/icon-share.svg"); }
+
+a[class='twitter'] {
+  background-image: url("../img/icon-twitter.svg"); }
+
+a[class='dribbble'] {
+  background-image: url("../img/icon-dribbble.svg"); }
 
 .about-content > .post, .post-template:not(.page-template) article, article.thought {
   max-width: 640px;
