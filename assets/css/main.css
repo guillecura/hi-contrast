@@ -282,6 +282,7 @@ body {
       right: 30px; } }
   @media (max-width: 640px) {
     .icon-menu {
+      animation: menu-h-in 0.333s ease-out forwards !important;
       right: 15px; } }
   .icon-menu > svg {
     display: block;
@@ -347,9 +348,9 @@ body {
     width: 16.01602px; }
   @media (max-width: 640px) {
     .icon-menu:hover rect {
-      animation: none;
-      fill: black;
-      width: 32px; } }
+      animation: none !important;
+      fill: black !important;
+      width: 32px !important; } }
   .icon-menu.nav-close {
     background-color: transparent; }
     .icon-menu.nav-close rect {
@@ -374,9 +375,19 @@ body {
         animation: cross-l .666s ease-out forwards; }
       .icon-menu.nav-close rect:nth-child(even) {
         animation: cross-r .666s ease-out forwards; }
+      @media (max-width: 640px) {
+        .icon-menu.nav-close rect {
+          fill: white !important; }
+          .icon-menu.nav-close rect:nth-child(odd) {
+            animation: cross-l 0.666s ease-out forwards !important; }
+          .icon-menu.nav-close rect:nth-child(even) {
+            animation: cross-r 0.666s ease-out forwards !important; } }
   .icon-menu.nav-close:hover rect {
     fill: #31b4e8;
     width: 32px; }
+    @media (max-width: 640px) {
+      .icon-menu.nav-close:hover rect {
+        fill: white !important; } }
 
 .nav {
   background-color: black;

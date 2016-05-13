@@ -1,5 +1,6 @@
 // =============================================================================
 // HAMBURGER MENU ICON
+// Animations on mobile should have Important rule to override the default ones.
 // =============================================================================
 
 
@@ -37,6 +38,7 @@
   }
 
   @include mq(mobile) {
+    animation: menu-h-in .333s ease-out forwards!important; // Slide In animation
     right: $distance * 1.5;
   }
 
@@ -93,9 +95,9 @@
 
 // Prevent hover on mobile -----------------------------------------------------
     @include mq(mobile) {
-      animation: none;
-      fill: $black;
-      width: $icon;
+      animation: none!important;
+      fill: $black!important;
+      width: $icon!important;
     }
   }
 // -----------------------------------------------------------------------------
@@ -129,12 +131,28 @@
       &:nth-child(even) {
         animation: cross-r .666s ease-out forwards;
       }
+
+// Prevent hover on mobile -----------------------------------------------------
+      @include mq(mobile) {
+        fill: $white!important;
+
+        &:nth-child(odd) {animation: cross-l .666s ease-out forwards!important;}
+
+        &:nth-child(even) {animation: cross-r .666s ease-out forwards!important;}
+      }
+// -----------------------------------------------------------------------------
     }
   }
 
   &.nav-close:hover rect {
     fill: $primary;
     width: #{$icon};
+
+// Prevent hover on mobile -----------------------------------------------------
+    @include mq(mobile) {
+      fill: $white!important;
+// -----------------------------------------------------------------------------
+    }
   }
 // -----------------------------------------------------------------------------
 }
