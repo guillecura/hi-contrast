@@ -863,6 +863,9 @@ h6 {
   background-size: cover;
   height: 50vh;
   min-height: 450px; }
+  .post-template:not(.page-template) .main-header.no-cover {
+    height: 100px;
+    min-height: auto; }
 
 .post-template:not(.page-template) .site-wrapper {
   margin: 0;

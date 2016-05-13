@@ -17,6 +17,11 @@
     background-size: cover;
     height: 50vh;
     min-height: 450px;
+
+    &.no-cover {
+      height: $header-height + $distance * 2;
+      min-height: auto;
+    }
   }
 
   .site-wrapper {
