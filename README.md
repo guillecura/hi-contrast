@@ -4,7 +4,7 @@ Developed to create a portfolio website. This theme for Ghost blogging platform 
 
 ###Demo & Download
 
-This theme is currently working used on my personal [blog](http://guillecura.co/) and you get the tarball file [here!](https://github.com/guillecura/hi-contrast/archive/master.zip)
+This theme was used on my personal [blog](http://guillecura.co/) until June of 2016, but you can get the tarball file [here!](https://github.com/guillecura/hi-contrast/archive/master.zip)
 
 ![Hi Contrast theme preview](http://guillecura.co/content/images/2016/03/screencapture-guillecura-co-1456863892698.png)
 
@@ -14,7 +14,7 @@ This theme is currently working used on my personal [blog](http://guillecura.co/
 
 The theme works with Ghost 0.7.4 or newer. You also need to enable the [Public Beta API](http://support.ghost.org/public-api-beta/). This is a checkbox at the bottom of your blog's _Settings_ page. If you are using [Ghost.org's Pro](https://ghost.org/) platform, follow the instructions at the [Ghost support page](http://support.ghost.org/upload-theme-ghostpro/). If you are using a Ghost installation in your own server, follow these steps.
 
-First go to the [releases page](https://github.com/belen-albeza/komik-theme/releases) and download the latest release. If you are hosting your own Ghost installation, unzip the tarball file into `content/themes/`. After that you'll need to restart Node. Then login into your blog, go to _Settings_ and pick up **hi-contrast** from the Theme dropdown.
+First download the latest release. If you are hosting your own Ghost installation, unzip the tarball file into `content/themes/`. After that you'll need to restart Node. Then login into your blog, go to _Settings_ and pick up **hi-contrast** from the Theme dropdown.
 
 ---
 
