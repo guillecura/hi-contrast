@@ -6,7 +6,7 @@ Developed to create a portfolio website. This theme for Ghost blogging platform 
 
 This theme was used on my personal [blog](http://guillecura.co/) until June of 2016, but you can get the tarball file [here!](https://github.com/guillecura/hi-contrast/archive/master.zip)
 
-![Hi Contrast theme preview](http://guillecura.co/content/images/2016/03/screencapture-guillecura-co-1456863892698.png)
+![Hi Contrast theme preview](http://guillecura.co/content/images/2016/06/hi-contrast-sample.jpg)
 
 ---
 
